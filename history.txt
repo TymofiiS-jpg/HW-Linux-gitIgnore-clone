@@ -1,0 +1,16 @@
+  357  git commit -m "first commit"
+  358  git branch -M main
+  359  git remote add origin git@github.com:TymofiiS-jpg/HW-Linux-gitIgnore-clone.git
+  360  git clone git@github.com:TymofiiS-jpg/HW-Linux-gitIgnore-clone.git
+  361  git checkout -b feature
+  362  nano README.md
+  363  nano .gitignore
+  364  git add README.md .gitignore
+  365  git commit -m "Добавлены изменения в README и .gitignore"
+  366  git push -u origin feature
+  367  git commit --amend -m "Добавлены изменения в README и .gitignore (ammend)"
+  368  git push -f origin feature
+  369  git checkout main
+  370  git pull origin main
+  371  git merge feature
+  372  git push origin main
